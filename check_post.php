@@ -11,6 +11,7 @@ if(trim($name) == ""){
 }else if(trim($email) == "" || trim($password) == "" || trim($_POST['massege']) == "" ){
     echo "Non sono stati inseriti tutti dati";
 }else{
+    $password = md5($password);
     echo "<h1>Tutti i Dati</h1>
           <p>Nome: $name</p>
           <p>Email: $email</p>
