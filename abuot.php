@@ -20,5 +20,5 @@
 </body>
 
 <?php 
-    require_once("blocks/footer.php")
+    require_once("blocks/footer.php");
 ?>

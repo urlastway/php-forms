@@ -1,5 +1,7 @@
 <?php
 
+require_once("DateTime.php");
+
 $name = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
@@ -16,5 +18,7 @@ if(trim($name) == ""){
           <p>Nome: $name</p>
           <p>Email: $email</p>
           <p>Password: $password</p>
-          <p>Messaggio: $_POST[massege]<p>";
+         <p>Messaggio: $_POST[massege]<p>";
+         
+    echo "Data del messaggio: $DateToday";
 }

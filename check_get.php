@@ -1,4 +1,5 @@
 <?php
+    require_once("DateTime.php");
 
     $name = $_GET['name'];
     $lastname = $_GET['lastname'];
@@ -9,3 +10,4 @@
           <p>Cognome: $lastname</p>
           <p>email: $email</p>
           <p>Messaggio: $_GET[messagge]<p>";
+    echo "Data del messaggio: $DateToday";
